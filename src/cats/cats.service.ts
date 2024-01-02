@@ -17,6 +17,7 @@ export class CatsService {
       include: {
         appointments: {
           select: {
+            id: true,
             date: true,
           },
         },
