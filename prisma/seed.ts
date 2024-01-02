@@ -57,6 +57,12 @@ async function main() {
         }),
       ),
     );
+    await prisma.appointment.create({
+      data: {
+        date: "2023-04-23T18:25:43.511Z",
+        catId: 1
+      }
+    })
     console.log('Seed terminé avec succès');
   } catch (e) {
     console.error('Erreur lors du seed:', e);
